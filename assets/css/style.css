@@ -1,0 +1,330 @@
+
+@font-face {
+    font-family: "MUSAMIM"; /* Replace with your font name */
+    src: url("assets/font/18 KHEBRAT MUSAMIM REGULAR.TTF") format("truetype");
+    font-weight: normal; /* Adjust as needed */
+    font-style: normal; /* Adjust as needed */
+  }
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+    color: #000;
+
+}
+/* Full-Screen Layout */
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffffff;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.logo img {
+    height: 50px;
+    position: absolute;
+    border-radius: 30px;
+    height: 137px;
+    position: absolute;
+    border-radius: 68px;
+    top: 4px;
+}
+
+.nav-items {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-items li {
+    margin-left: 20px;
+    padding: 6px;
+    background-color: black;
+    border-radius: 6px;
+    width: 130px !important;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.nav-items li a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.nav-items li .soon {
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 800;
+    padding: 2px 2px 2px 3px;
+    background-color: rgb(205 2 2);
+    position: absolute;
+    top: 2px;
+    border-radius: 4px;
+    right: 451px;
+
+}
+.nav-items li .soon2 {
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 800;
+    padding: 2px 2px 2px 3px;
+    background-color: rgb(205 2 2);
+    position: absolute;
+    top: 2px;
+    border-radius: 4px;
+    right: 300px;
+}
+
+/* Slider Styles */
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide.active {
+    display: block;
+}
+
+
+
+
+
+/* Popup Styles */
+.popup {
+    display: none;
+    position: fixed;
+    top: 44px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*background-color: rgba(0, 0, 0, 0.8);*/
+    z-index: 20;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.popup-content h2 {
+    margin-bottom: 15px;
+}
+
+.popup-content p {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+/* Close Button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* Carousel Container */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Carousel Items */
+.carousel {
+    display: flex ;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Each Carousel Item */
+.carousel-item {
+    min-width: 100%;
+    text-align: start;
+    display: flex !important;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.info{
+    display: flex !important;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.carousel-item img {
+    width: 15%;
+    height: auto;
+}
+
+.carousel-item h2 {
+    margin: 15px 0 5px;
+    font-size: 24px;
+}
+
+.carousel-item p {
+    font-size: 14px;
+    color: #040404;
+}
+
+.btns{
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    z-index: 5555;
+}
+
+/* Arrow Buttons */
+.carousel-arrow {
+    color: rgb(120, 120, 120);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 5555;
+    background: white;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+.carousel-arrow:hover {
+color: #000;}
+
+/* Active class for visible slide */
+.carousel-item.active {
+    display: block;
+}
+
+
+
+
+/**********************************  Image right bottom ***************/
+.block-minicon {
+    z-index: 9999;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    position: absolute;
+    bottom: 0px;
+    
+}
+
+.card {
+    width:200px ;
+    height: 400px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    padding: 15px 0px 0px 15px;
+}
+
+.card-image {
+    cursor: pointer;
+}
+
+/* Bubble hidden by default */
+.bubble {
+    display: none;
+    position: absolute;
+    font-size: 14px;
+    line-height: 24px;
+    width: 300px;
+    background: #fff;
+    border-radius: 40px;
+    padding: 24px;
+    text-align: center;
+    color: #000;
+    bottom: 280px;
+    right: 160px;
+    z-index: 1000;
+}
+
+/* Bubble arrow */
+.bubble-bottom-left:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 12px solid transparent;
+    border-right: 24px solid #fff;
+    border-top: 12px solid #fff;
+    border-bottom: 20px solid transparent;
+    right: 15px;
+    bottom: -24px;
+}
+
+/* Show the bubble when hovering over the card image */
+.pik:hover .bubble {
+    display: block;
+}
+
+.pik{
+    background: transparent;
+    width: 124px;
+    height: 178px;
+    position: absolute;
+}

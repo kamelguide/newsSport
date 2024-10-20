@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full-Screen Slider with Navbar</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="assets/images/WhatsApp Image 2024-10-20 at 11.36.11 AM.jpeg" alt="Logo" />
+        </div>
+        <ul class="nav-items">
+            <li class="nav-link" data-popup="#popup-choaching"><a href="#" >Coaching privé</a></li>
+            <li  class="nav-link" data-popup="#popup-cours"><a href="#">Cours collectifs</a></li>
+            <li class="nav-link" data-popup="#popup-boutique"><a href="#" >Boutique</a>
+            <span class="soon">SOON !</span></li>
+            <li class="nav-link" data-popup="#popup-stages"><a href="#" >Stages & camps</a>
+                <span class="soon2">SOON !</span></li>
+            <li class="nav-link" data-popup="#popup-temoignages"><a href="#" >Témoignages</a></li>
+            <li class="nav-link" data-popup="#popup-contact"><a href="#" >Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Slider -->
+    <div class="slider">
+        
+        <div class="slide active">
+            <img src="assets/images/slide1.jpeg" alt="Slide 2">
+        </div>
+       
+       
+        <div class="slide ">
+            <img src="assets/images/slid3.jpeg" alt="Slide 3">
+        </div> 
+      
+        <div class="slide ">
+            <img src="assets/images/slid4.jpeg" alt="Slide 3">
+        </div> 
+        
+        <div class="slide ">
+            <img src="assets/images/slid2.jpeg" alt="Slide 3">
+        </div>
+       
+        
+    </div>
+
+    <!-- Mini icon right -->
+    <div class="block-minicon">
+        <div class="card pik" id="card">
+            <img class="card-image" src="assets/images/coach.png" width="250" alt="Game cover">
+        </div>
+    
+        <!-- Bubble for clicked description -->
+        <div class="bubble bubble-bottom-left" id="hover-bubble">
+            <p>Je suis fasciné et engagé dans les sports de combat depuis mon plus jeune âge. J'ai plusieurs formations autour de ma passion de la boxe. Ma pédagogie de transmission est caractérisée par le professionnalisme, la flexibilité et une touche personnelle d'humour. Mes cours mettent l'honneur sur la progression, la précision et une solidarité familiale entre les participants.</p>
+            <div style="display: flex; align-items: center; justify-content: space-between; padding: 10px;">
+                <a href="https://wa.me/+21655667580" style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                    <img src="assets/images/whats.png" width="40%">
+                </a>
+                <a href="mailto:warrior.tn.info@gmail.com" style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                    <img src="assets/images/mail.png" width="40%">
+                </a>
+                <a href="https://www.instagram.com/warrior.tn?igsh=Zjhiam1tZTRka2I5" style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                    <img src="assets/images/instagram.png" width="40%">
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61566568660570&mibextid=LQQJ4d" style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                    <img src="assets/images/facebook.png" width="40%">
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    
+ <!-- Popups -->
+ <div class="popup" id="popup-choaching">
+    <div class="popup-content">
+        <span class="close">&times;</span>
+        <h2>Coaching privé</h2>
+        <p>Un coaching personnalisé sur mesure en fonction de vos besoins personnels :
+            <ul style="    text-align: left;
+            width: max-content;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 15px;
+            width: 100%;">
+                <li style="    width: 193px; font-size: 14px;">Boxe thaïlandaise</li>
+                <li style="    width: 193px; font-size: 14px;">Kick boxing</li>
+                <li style="    width: 193px; font-size: 14px;">Boxe anglaise</li>
+                <li style="    width: 193px; font-size: 14px;">Circuit training</li>
+                <li style="    width: 193px; font-size: 14px;">Préparation physique</li>
+                <li style="    width: 193px; font-size: 14px;">Préparation mentale</li>
+                <li style="    width: 193px; font-size: 14px;">Perte de poids</li>
+                <li style="    width: 193px; font-size: 14px;">Renforcement musculaire</li>
+                <li style="    width: 193px; font-size: 14px;">Prise de masse</li>
+                <li style="    width: 193px; font-size: 14px;">Défoulement</li>
+                <li style="    width: 193px; font-size: 14px;">Boxe thérapeutique</li>
+            </ul>
+            <span style="margin-top: 15px ; font-size: 14px;">Coaching en ligne - Coming soon ! </span>
+            </p>
+    </div>
+</div>
+<div class="popup" id="popup-cours">
+    <div class="popup-content" style="left: 96px;" >
+        <span class="close">&times;</span>
+        <h2>Cours collectifs</h2>
+        <p>Les cours collectifs sont une occasion unique pour partager ses compétences avec des camarades, améliorer la technique et développer des amitiés :
+
+            <ul style="    text-align: left;
+            width: max-content;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 15px;
+            width: 100%;">
+                <li style="    width: 193px; font-size: 14px;">Boxe thaïlandaise</li>
+                <li style="    width: 193px; font-size: 14px;">Kick boxing</li>
+                <li style="    width: 193px; font-size: 14px;">Boxe anglaise</li>
+                <li style="    width: 193px; font-size: 14px;">Circuit training</li>
+            </ul>
+            </p>
+        
+    </div>
+</div>
+<div class="popup" id="popup-boutique">
+    <div class="popup-content" style="left: 224px;" >
+        <span class="close">&times;</span>
+        <h2>Boutique</h2>
+        <p><span style="  font-size: 14px;">Coming soon !</span><br>
+            Bientôt dans notre boutique: des produits physiques et digitaux  liés au sport!</p>
+    </div>
+</div>
+<div class="popup" id="popup-stages">
+    <div class="popup-content" style="left: 382px;" >
+        <span class="close">&times;</span>
+        <h2>Stages & camps</h2>
+        <p><span style="  font-size: 14px;">Coming soon !</span><br>
+            Des camps d'entraînement ou de préparation physique et mentale,<br> en tunisie ou à l'étranger</p>
+    </div>
+</div>
+<div class="popup" id="popup-temoignages">
+    <div class="popup-content" style="left: 384px;" >
+        <span class="close">&times;</span>
+        <h2>Témoignages</h2>
+        <div class="carousel-container">
+            <!-- Left Arrow -->
+             <div class="btns">
+                <button class="carousel-arrow left-arrow" id="prevBtn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+                  </svg></button>
+                <button class="carousel-arrow right-arrow" id="nextBtn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg></button>
+             </div>
+            
+
+            <!-- Carousel Items -->
+            <div class="carousel">
+                <div class="carousel-item active">
+                    <img src="assets/images/team/50age.png"  alt="Slide 1">
+                    <div class="info">
+                    <h2>Enseignante<span style="font-size: 14px;font-weight: 500;">, 50 ans</span></h2>
+                       
+                    <p>J'ai fait la connaissance de coach Yassin car il est le coach privé de ma fille en boxe thaïlandaise et ai pu faire des sessions privées avec lui. J'avais une blessure au genou et il a adapté les exercices à mes besoins (renforcement musculaire et défoulement). Ses leçons sont bien structurées, dynamiques et, même si on souffre un peu, on ne voit pas le temps passer. Coach Yassin est professionnel, accueillant et drôle. On a donc à chaque fois envie d'y retourner.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/team/50ageh.png"  alt="Slide 1">
+                    <div class="info">
+                    <h2>Docteur en économie<span style="font-size: 14px;font-weight: 500;">, 50 ans</span></h2>
+                    <p>Venant de Suisse je me suis entraîné avec Yassin durant mes vacances. Super entraînement, intensif et complet. J'ai adoré nos petits sparring. Merci Yassin ! Je me réjouis de revenir lors de mes prochaines vacances.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/team/20age.png"  alt="Slide 1">
+                    <div class="info">
+                        <h2>Étudiante<span style="font-size: 14px;font-weight: 500;">, 21 ans</span></h2>
+                        <p style="font-weight: 600;">Championne suisse de boxe thaïlandaise</p>
+                    <p>Yassin est dynamique et motivé; que ce soit en groupe ou en coaching privé, il est toujours plein d’énergie, souriant et aide à atteindre ses objectifs!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/team/23age.png"  alt="Slide 1">
+                    <div class="info">
+                        <h2>Technicien supérieur<span style="font-size: 14px;font-weight: 500;">, 23 ans</span></h2>
+                    <p>Les entraînements sont excellents surtout quand le coach Yassin nous explique les tactiques de manière très détaillée et en fournissant les arguments qui vont avec.  L'entraîneur Yassin fait un travail exceptionnel et je crois en ses capacités et en sa personne. Il est très patient avec ses élèves, qu'ils soient nouveaux ou expérimentés. Ses explications des tactiques et techniques d'attaque et de défence sont toujours accompagnées d'exemples réels ou d'arguments scientifiques</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/team/20age.png"  alt="Slide 1">
+                    <div class="info">
+                        <h2>Lycéenne<span style="font-size: 14px;font-weight: 500;">, 16 ans</span></h2>
+                    <p>Coach Yassin, je considère votre entraînement comme étant complet sur tous les plans, physique et technique. De plus, te es drôle et tu nous fais rire. Tu t'engages aussi à structurer l'entraînement de manière à ce qu'on ne se lasse pas du travail. Je sens vraiment que je me défoule avec toi. A chaque fois que je viens m'entraîner je suis heureuse de venir. Et même les jours où je ne vais pas bien, je "vide" tout dans la salle de sport. C'est vrai que je rentre fatiguée, mais heureuse. Depuis que je m'entraîne avec toi, j'ai plus confiance en moi, et surtout après avoir suivi le coaching privé. J'ai senti que je pouvais progresser et avancer. Vraiment bravo coach et bonne continuation!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/team/19age.png"  alt="Slide 1">
+                    <div class="info">
+                        <h2>Étudiant<span style="font-size: 14px;font-weight: 500;">, 19 ans</span></h2>
+                    <p>Merci coach pour vos encouragements que dieu vous garde pour nous! La boxe nous aide et nous donne de la motivation. Merci pour tout ce que vous faites pour nous! En plus vous venez depuis Monastir pour nous, on n'oubliera pas et vous resterez le meilleur coach!</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Right Arrow -->
+        </div>
+    </div>
+</div>
+<div class="popup" id="popup-contact">
+    <div class="popup-content" style="left: 385px;" >
+        <span class="close">&times;</span>
+        <h2>Contact</h2>
+        <p style="font-size: 12px;"></p>
+        <div style="display: flex; align-items: center ; justify-content: space-between;">
+            <a  href="https://wa.me/+21655667580" style="display: flex; align-items: center ; justify-content:center; flex-direction: column;">
+              <img  src="assets/images/whats.png" width="31%"  />
+              <span style="font-size: 13px;padding-top: 10px;" >+216 55 66 75 80</span>
+            </a>
+           
+            <a href="https://www.instagram.com/warrior.tn?igsh=Zjhiam1tZTRka2I5" style="display: flex; align-items: center ; justify-content:center; flex-direction: column;" >
+              <img src="assets/images/instagram.png"  width="30%" />
+              <span style="font-size: 13px;padding-top: 10px;">warrior.tn</span>
+            </a>
+            <a href="mailto:warrior.tn.info@gmail.com" style="display: flex; align-items: center ; justify-content:center; flex-direction: column;">
+                <img src="assets/images/mail.png"  width="28%" />
+                <span style="font-size: 13px;padding-top: 10px;">
+                  warrior.tn.info@gmail.com
+                </span>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61566568660570&mibextid=LQQJ4d" style="display: flex; align-items: center ; justify-content:center; flex-direction: column;" >
+              <img src="assets/images/facebook.png"  width="30%" />
+              <span style="font-size: 13px;padding-top: 10px;">warrior.tn</span>
+            </a>
+          </div>
+    </div>
+</div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
